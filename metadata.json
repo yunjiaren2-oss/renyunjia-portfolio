@@ -1,0 +1,6 @@
+{
+  "name": "Yunjia Ren Portfolio",
+  "description": "任蕴佳 (Yunjia Ren) 的个人作品集档案，采用独特的复古物理文件夹、活页设计，包含科普漫画、内容营销、项目活动和深度报道四大板块。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
