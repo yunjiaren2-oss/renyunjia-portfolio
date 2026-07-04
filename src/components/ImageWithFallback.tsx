@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
+export const resolveAssetPath = (path?: string): string => {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+    return path;
+  }
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return base.endsWith('/') ? `${base}${cleanPath}` : `${base}/${cleanPath}`;
+};
+
 interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src?: string;
   fallbackSrc: string;
@@ -8,17 +18,17 @@ interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElemen
 }
 
 export default function ImageWithFallback({ src, fallbackSrc, alt, className, ...props }: ImageWithFallbackProps) {
-  const [imgSrc, setImgSrc] = useState<string | undefined>(src);
+  const [imgSrc, setImgSrc] = useState<string | undefined>(resolveAssetPath(src));
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    setImgSrc(src);
+    setImgSrc(resolveAssetPath(src));
     setHasError(false);
   }, [src]);
 
   const handleError = () => {
     if (!hasError) {
-      setImgSrc(fallbackSrc);
+      setImgSrc(resolveAssetPath(fallbackSrc));
       setHasError(true);
     }
   };

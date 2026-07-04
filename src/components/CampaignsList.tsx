@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Calendar, Heart, Award } from 'lucide-react';
 import { campaignItems } from '../data/portfolio';
-import ImageWithFallback from './ImageWithFallback';
+import ImageWithFallback, { resolveAssetPath } from './ImageWithFallback';
 
 export default function CampaignsList() {
   const [lightboxPhoto, setLightboxPhoto] = useState<{ src: string; caption: string; fallback: string } | null>(null);
@@ -155,11 +155,11 @@ export default function CampaignsList() {
 
           <div className="max-w-4xl max-h-[85vh] flex flex-col justify-center items-center gap-3">
             <img 
-              src={lightboxPhoto.src} 
+              src={resolveAssetPath(lightboxPhoto.src)} 
               alt={lightboxPhoto.caption}
               className="max-w-full max-h-[75vh] object-contain rounded-md shadow-2xl border border-stone-800"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = lightboxPhoto.fallback;
+                (e.target as HTMLImageElement).src = resolveAssetPath(lightboxPhoto.fallback);
               }}
             />
             <p className="text-stone-300 font-serif text-xs md:text-sm bg-stone-900/80 px-4 py-2 rounded-full border border-stone-800/80 tracking-wide text-center max-w-md shadow-md">

@@ -20,6 +20,7 @@ import ComicModal from './components/ComicModal';
 import MarketingAccordion from './components/MarketingAccordion';
 import CampaignsList from './components/CampaignsList';
 import InDepthReportsList from './components/InDepthReportsList';
+import { resolveAssetPath } from './components/ImageWithFallback';
 
 export default function App() {
   const [isOpened, setIsOpened] = useState(false);
@@ -209,7 +210,7 @@ export default function App() {
             {/* Raw Left Image Sticker (No Polaroid format) */}
             <div className="absolute -left-16 top-24 w-32 transform -rotate-12 select-none pointer-events-none group-hover:-translate-x-1.5 transition-transform duration-300">
               <img 
-                src="/images/books_basket.png" 
+                src={resolveAssetPath('/images/books_basket.png')} 
                 alt="Books Basket" 
                 className="w-full h-auto object-contain drop-shadow-xl" 
                 referrerPolicy="no-referrer"
@@ -219,7 +220,7 @@ export default function App() {
             {/* Raw Right Image Sticker (No Polaroid format) */}
             <div className="absolute -right-16 bottom-16 w-32 transform rotate-12 select-none pointer-events-none group-hover:translate-x-1.5 transition-transform duration-300">
               <img 
-                src="/images/books_pot.png" 
+                src={resolveAssetPath('/images/books_pot.png')} 
                 alt="Books Pot" 
                 className="w-full h-auto object-contain drop-shadow-xl" 
                 referrerPolicy="no-referrer"
@@ -733,7 +734,7 @@ export default function App() {
                                 
                                 {hasAvatar ? (
                                   <img
-                                    src={avatarSrc}
+                                    src={resolveAssetPath(avatarSrc)}
                                     alt="Yunjia Ren's ID Photo"
                                     onError={handleAvatarError}
                                     className="w-full h-full object-cover z-0"
