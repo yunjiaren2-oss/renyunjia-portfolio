@@ -132,15 +132,8 @@ export default function App() {
   return (
     <div className="min-h-screen w-full bg-[#b0c8d6] flex items-center justify-center p-4 md:p-6 select-none relative overflow-x-hidden font-serif">
       
-      {/* 3D Paper Wrinkle Filter definitions */}
+    {/* 3D Paper Wrinkle Filter definitions */}
       <svg className="hidden">
-        <filter id="paper-wrinkle">
-          <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="5" result="noise" />
-          <feDiffuseLighting in="noise" lightingColor="#fff" surfaceScale="3" result="light">
-            <feDistantLight azimuth="45" elevation="45" />
-          </feDiffuseLighting>
-          <feBlend mode="multiply" in="SourceGraphic" in2="light" result="blend" />
-        </filter>
       </svg>
 
       {/* Decorative grass/hills background */}
@@ -355,10 +348,10 @@ export default function App() {
                   {(!isMobile || activePage === 1) && (
                     <div className="w-full md:w-1/2 h-full md:h-full border-b md:border-b-0 md:border-r border-stone-200 p-3.5 sm:p-4 md:p-5 flex flex-col justify-between bg-[#faf9f6]/30 relative overflow-hidden">
                       
-                      {/* Retro crumpled paper sheet with 3D physical filters */}
+                     {/* Retro premium paper sheet */}
                       <div
                         className="flex-1 min-h-0 w-full border border-stone-300/80 rounded-t-lg rounded-b-none border-b-0 p-4 md:p-5 overflow-y-auto shadow-inner relative z-10 no-scrollbar"
-                        style={{ filter: 'url(#paper-wrinkle)', background: '#fdfdfc' }}
+                        style={{ background: 'linear-gradient(to bottom, #fdfdfc 0%, #faf9f6 100%)' }}
                       >
                         <div className="space-y-3.5 md:space-y-4 text-stone-800 leading-relaxed tracking-wide pb-32 md:pb-36">
                           <p className="text-[8px] md:text-[9px] text-amber-700 text-center font-mono tracking-widest font-semibold">
