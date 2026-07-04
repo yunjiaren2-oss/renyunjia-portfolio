@@ -100,14 +100,14 @@ export const campaignItems: CampaignItem[] = [
         desc: '在城市各个角落藏下手写信，引导用户线下寻宝并进行社交媒体晒单分享，将线上活动落地到线下参与'
       },
       {
-        title: '「晚安」剧院与城市漫游',
+        title: '「晚安」剧院与城市漫游 ',
         desc: '策划将晚安短信带到话剧院巡演现场及各城市地标，设计富有仪式感的打卡，丰富线下活动形式，提升用户参与仪式感。'
       }
     ],
     photos: [
       {
         src: '/images/image-1.png',
-        caption: '「晚安」剧院',
+        caption: '「晚安」剧院 ',
         rotation: 'rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain',
@@ -115,28 +115,28 @@ export const campaignItems: CampaignItem[] = [
       },
       {
         src: '/images/image-2.png',
-        caption: '「晚安手写信」城市寻宝',
+        caption: '「晚安手写信」城市寻宝  ',
         rotation: '-rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
       },
       {
         src: '/images/image-5.png',
-        caption: '「晚安城市里的人」深夜回家',
+        caption: '「晚安城市里的人」深夜回家 ',
         rotation: 'rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
       },
       {
         src: '/images/image-6.png',
-        caption: '「晚安城市里的人」挤地铁',
+        caption: '「晚安城市里的人」挤地铁 ',
         rotation: '-rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
       },
       {
         src: '/images/image-7.png',
-        caption: '「晚安城市里的人」想上岸的人',
+        caption: '「晚安城市里的人」想上岸的人 ',
         rotation: 'rotate-2',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
