@@ -107,7 +107,7 @@ export const campaignItems: CampaignItem[] = [
     photos: [
       {
         src: '/images/image-1.png',
-        caption: '「晚安」剧院创意视觉 (图1)',
+        caption: '「晚安」剧院',
         rotation: 'rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain',
@@ -115,28 +115,28 @@ export const campaignItems: CampaignItem[] = [
       },
       {
         src: '/images/image-2.png',
-        caption: '「晚安手写信」城市寻宝 (图2)',
+        caption: '「晚安手写信」城市寻宝',
         rotation: '-rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
       },
       {
         src: '/images/image-5.png',
-        caption: '「晚安城市里的人」深夜回家 (图5)',
+        caption: '「晚安城市里的人」深夜回家',
         rotation: 'rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
       },
       {
         src: '/images/image-6.png',
-        caption: '「晚安城市里的人」挤地铁 (图6)',
+        caption: '「晚安城市里的人」挤地铁',
         rotation: '-rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
       },
       {
         src: '/images/image-7.png',
-        caption: '「晚安城市里的人」想上岸的人 (图7)',
+        caption: '「晚安城市里的人」想上岸的人',
         rotation: 'rotate-2',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
@@ -171,7 +171,7 @@ export const campaignItems: CampaignItem[] = [
     photos: [
       {
         src: '/images/image-8.png',
-        caption: '画展精美现场展陈 (图8)',
+        caption: '画展精美现场展陈',
         rotation: '-rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain',
@@ -179,7 +179,7 @@ export const campaignItems: CampaignItem[] = [
       },
       {
         src: '/images/image-9.png',
-        caption: '女性创作分享互动墙 (图9)',
+        caption: '女性创作分享互动墙',
         rotation: 'rotate-2',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain'
@@ -205,7 +205,7 @@ export const campaignItems: CampaignItem[] = [
     photos: [
       {
         src: '/images/image-3.png',
-        caption: '各行各业的“她”登上大屏 (图3)',
+        caption: '各行各业的“她”登上大屏',
         rotation: '-rotate-1',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain',
@@ -213,7 +213,7 @@ export const campaignItems: CampaignItem[] = [
       },
       {
         src: '/images/image-4.png',
-        caption: '登上小红书热榜 (图4)',
+        caption: '登上小红书热榜',
         rotation: 'rotate-2',
         aspect: 'aspect-[3/4]',
         objectFit: 'object-contain',
@@ -272,6 +272,6 @@ export const reportsData: InDepthReport[] = [
       { text: '法治追踪丨汕头12岁男童烫伤8天后死亡：亲属以新罪名重新报案 ↗', url: 'https://m.thepaper.cn/newsDetail_forward_32399846', type: 'link' },
       { text: '新春基层纪实丨95后新农人拍视频“巡村”：卖货，也展示家乡 ↗', url: 'https://m.thepaper.cn/newsDetail_forward_32611709', type: 'link' }
     ],
-    description: '澎湃新闻社会版/新媒体版重点稿件。通过细致入微的消费陷阱拆解、民生矛盾追踪、以及乡村振兴人物特写，呈现扎实的新闻业务功底与悲悯敏锐的专业视角。'
+    description: '澎湃新闻社会版/新媒体版重点稿件。题材包括消费陷阱拆解、民生矛盾追踪、以及乡村振兴人物特写，丰富的采访、策划、写作经验。'
   }
 ];
