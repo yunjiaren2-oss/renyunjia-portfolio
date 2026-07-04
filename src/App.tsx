@@ -651,7 +651,7 @@ export default function App() {
                       <div className="flex-1 bg-stone-50 border border-stone-200 rounded-xl p-4 md:p-5 shadow-sm space-y-4 flex flex-col justify-between">
                         <div className="space-y-3">
                           <p className="text-xs text-stone-600 leading-relaxed font-light">
-                            目前正积极寻找 <strong className="font-semibold text-stone-900">内容策划、增长营销、增长运营、市场营销</strong> 方向的工作机会。非常期待听到您的来信！
+                            目前正积极寻找 <strong className="font-semibold text-stone-900">市场营销、增长运营、内容策划、用户运营</strong> 方向的工作机会。非常期待听到您的来信！
                           </p>
 
                         {/* Retro permanent license of travel ID card (Reference: Figure 9) */}
